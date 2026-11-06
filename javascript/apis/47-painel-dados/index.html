@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>47. Painel de dados</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card card--wide stack">
+      <h1>Painel de produtos</h1>
+      <p class="muted">Dados de exemplo da DummyJSON.</p>
+      <p id="status" class="status" role="status"></p>
+      <section id="metrics" class="metrics" aria-label="Indicadores"></section>
+      <section>
+        <h2>Categorias com mais produtos</h2>
+        <div id="category-chart" class="bars"></div>
+      </section>
+      <section>
+        <h2>Melhor avaliados</h2>
+        <table class="table">
+          <thead><tr><th>Produto</th><th>Categoria</th><th>Nota</th><th>Preço</th></tr></thead>
+          <tbody id="top-products"></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>

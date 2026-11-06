@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>42. Login demonstrativo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card stack">
+      <h1>Login demonstrativo</h1>
+      <p class="warning" role="note">
+        <strong>Isto não é segurança real.</strong> Todo código no navegador pode ser lido
+        e alterado. Autenticação de verdade acontece no servidor.
+      </p>
+      <section id="login-view">
+        <p class="muted">Use <code>aluno</code> e a senha <code>lab-demo</code>.</p>
+        <form id="login-form" class="stack" novalidate>
+          <label>Usuário <input name="username" autocomplete="off" /></label>
+          <label>Senha <input name="password" type="password" autocomplete="off" /></label>
+          <button class="btn" type="submit">Entrar</button>
+        </form>
+        <p id="login-error" class="status status--error" role="alert"></p>
+      </section>
+      <section id="welcome-view" hidden>
+        <p id="welcome-message"></p>
+        <button id="logout" class="btn btn--ghost" type="button">Sair</button>
+      </section>
+    </main>
+  </body>
+</html>

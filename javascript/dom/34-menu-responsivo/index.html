@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>34. Menu responsivo</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <strong>Lab</strong>
+      <button id="menu-toggle" class="btn btn--ghost menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <nav id="site-menu" class="site-menu" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+    <main class="card stack">
+      <h1>Menu responsivo</h1>
+      <p class="muted">Abaixo de 720 px, o menu vira um painel aberto pelo botão. A tecla Esc fecha o painel.</p>
+      <section id="inicio"><h2>Início</h2><p>Conteúdo de exemplo.</p></section>
+      <section id="projetos"><h2>Projetos</h2><p>Conteúdo de exemplo.</p></section>
+      <section id="contato"><h2>Contato</h2><p>Conteúdo de exemplo.</p></section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>44. Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card stack">
+      <h1>Consulta de CEP</h1>
+      <form id="cep-form" class="search-form" novalidate>
+        <input id="cep-input" aria-label="CEP" placeholder="01001-000" inputmode="numeric" maxlength="9" />
+        <button class="btn" type="submit">Buscar</button>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <dl id="address" class="address" hidden></dl>
+    </main>
+  </body>
+</html>

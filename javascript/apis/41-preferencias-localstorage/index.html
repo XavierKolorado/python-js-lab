@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>41. Preferências com localStorage</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Preferências</h1>
+      <p id="greeting" class="muted"></p>
+      <form id="preferences-form" class="stack">
+        <label>Seu nome <input name="name" maxlength="40" /></label>
+        <label>Tamanho da fonte
+          <select name="fontSize">
+            <option value="14">Pequena</option>
+            <option value="16">Média</option>
+            <option value="20">Grande</option>
+          </select>
+        </label>
+        <label class="inline-field"><input name="highlight" type="checkbox" /> Destacar a borda do cartão</label>
+        <div class="row">
+          <button class="btn" type="submit">Salvar</button>
+          <button id="clear-preferences" class="btn btn--danger" type="button">Limpar</button>
+        </div>
+      </form>
+      <p id="status" class="status" role="status"></p>
+    </main>
+  </body>
+</html>

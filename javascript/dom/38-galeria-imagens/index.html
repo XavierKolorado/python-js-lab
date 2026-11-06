@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>38. Galeria de imagens</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card card--wide stack">
+      <h1>Galeria de imagens</h1>
+      <div id="filters" class="row" role="group" aria-label="Filtrar por categoria"></div>
+      <div id="gallery" class="gallery"></div>
+    </main>
+    <dialog id="viewer" class="viewer" aria-label="Visualização da imagem">
+      <img id="viewer-image" alt="" />
+      <p id="viewer-caption"></p>
+      <div class="row viewer-actions">
+        <button id="previous-image" class="btn btn--ghost" type="button">Anterior</button>
+        <button id="next-image" class="btn btn--ghost" type="button">Próxima</button>
+        <button id="close-viewer" class="btn" type="button">Fechar</button>
+      </div>
+    </dialog>
+  </body>
+</html>

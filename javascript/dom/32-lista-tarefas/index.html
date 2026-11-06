@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>32. Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card stack">
+      <h1>Lista de tarefas</h1>
+      <form id="task-form" class="task-form">
+        <input id="task-input" aria-label="Nova tarefa" placeholder="O que precisa ser feito?" maxlength="120" />
+        <button class="btn" type="submit">Adicionar</button>
+      </form>
+      <p id="form-error" class="status status--error" role="alert"></p>
+      <ul id="task-list" class="task-list"></ul>
+      <p id="task-summary" class="muted"></p>
+    </main>
+  </body>
+</html>

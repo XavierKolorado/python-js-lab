@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>50. Aplicação de favoritos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card card--wide stack">
+      <h1>Personagens favoritos</h1>
+      <p class="muted">Dados da Rick and Morty API. Os favoritos ficam neste navegador.</p>
+      <form id="filter-form" class="filters" novalidate>
+        <input id="name-filter" type="search" aria-label="Filtrar por nome" placeholder="Nome do personagem" />
+        <select id="status-filter" aria-label="Filtrar por status">
+          <option value="">Todos os status</option>
+          <option value="alive">Vivo</option>
+          <option value="dead">Morto</option>
+          <option value="unknown">Desconhecido</option>
+        </select>
+        <button class="btn" type="submit">Buscar</button>
+        <label class="only-favorites"><input id="only-favorites" type="checkbox" /> Só favoritos</label>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <div id="character-grid" class="character-grid"></div>
+    </main>
+  </body>
+</html>

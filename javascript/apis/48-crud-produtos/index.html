@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>48. CRUD de produtos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card card--wide stack">
+      <h1>CRUD de produtos</h1>
+      <form id="product-form" class="product-form" novalidate>
+        <label>Nome <input name="name" maxlength="60" /></label>
+        <label>Preço (R$) <input name="price" inputmode="decimal" /></label>
+        <label>Quantidade <input name="quantity" inputmode="numeric" /></label>
+        <div class="row form-actions">
+          <button id="save-product" class="btn" type="submit">Cadastrar</button>
+          <button id="cancel-edit" class="btn btn--ghost" type="button" hidden>Cancelar</button>
+        </div>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <table class="table">
+        <thead><tr><th>Produto</th><th>Preço</th><th>Qtd.</th><th>Ações</th></tr></thead>
+        <tbody id="product-rows"></tbody>
+      </table>
+    </main>
+  </body>
+</html>

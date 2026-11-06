@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>45. Aplicação de clima</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card stack">
+      <h1>Clima agora</h1>
+      <form id="city-form" class="search-form" novalidate>
+        <input id="city-input" aria-label="Cidade" placeholder="Ex.: Curitiba" />
+        <button class="btn" type="submit">Consultar</button>
+      </form>
+      <p id="status" class="status" role="status"></p>
+      <article id="weather" class="weather" hidden>
+        <h2 id="weather-city"></h2>
+        <p id="weather-temperature" class="temperature"></p>
+        <p id="weather-description"></p>
+        <p id="weather-details" class="muted"></p>
+      </article>
+    </main>
+  </body>
+</html>

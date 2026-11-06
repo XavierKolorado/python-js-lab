@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>33. Formulário validado</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Formulário validado</h1>
+      <p class="muted">Nenhum dado sai do navegador.</p>
+      <form id="signup-form" class="stack" novalidate>
+        <label>Nome
+          <input name="name" autocomplete="name" />
+          <small class="field-error" data-error-for="name"></small>
+        </label>
+        <label>E-mail
+          <input name="email" type="email" autocomplete="email" />
+          <small class="field-error" data-error-for="email"></small>
+        </label>
+        <label>Idade
+          <input name="age" inputmode="numeric" />
+          <small class="field-error" data-error-for="age"></small>
+        </label>
+        <label>Senha
+          <input name="password" type="password" autocomplete="new-password" />
+          <small class="field-error" data-error-for="password"></small>
+        </label>
+        <label>Confirmar senha
+          <input name="confirmation" type="password" autocomplete="new-password" />
+          <small class="field-error" data-error-for="confirmation"></small>
+        </label>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+      <p id="form-status" class="status" role="status"></p>
+    </main>
+  </body>
+</html>
