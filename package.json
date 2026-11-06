@@ -1,0 +1,22 @@
+{
+  "name": "python-js-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "100 exercícios resolvidos de Python e JavaScript",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XavierKolorado/python-js-lab.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test \"tests/javascript/*.test.js\"",
+    "test:e2e": "node --test --test-concurrency=1 \"tests/e2e/*.test.js\"",
+    "test:e2e:live": "node -e \"process.env.LIVE_API='1';require('child_process').execSync('node --test --test-concurrency=1 tests/e2e/apis.test.js',{stdio:'inherit'})\""
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}
